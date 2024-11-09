@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Оберіть напій</h2>
+        <form>
+            <label for="drink">Напій</label>
+            <select id="drink" onchange="showMessage()">
+                <option value="">Виберіть</option>
+                <option value="Кава">Кава</option>
+                <option value="Чай">Чай</option>
+                <option value="Сік">Сік</option>
+            </select>
+        </form>
+        <div id="messageNumber1"></div>
+</form>
+    <h2>Введіть день тижня:</h2>
+        <input type="text" id="dayInput" placeholder="Наприклад, понеділок">
+        <button onclick="checkDay()">Перевірити</button>
+        <div id="messageNumber2"></div>
+    <h2>Введіть номер місяця (1-12):</h2>
+        <input type="number" id="monthInput" placeholder="Наприклад, 3">
+        <button onclick="checkSeason()">Перевірити</button>
+        <div id="messageNumber3"></div>
+        <h2>Введіть номер місяця (1-12):</h2>
+        <input type="number" id="monthDaysInput" placeholder="Наприклад, 2">
+        <button onclick="checkDaysInMonth()">Перевірити</button>
+        <div id="messageNumber4"></div>
+        <h2>Введіть колір (червоний, жовтий, зелений):</h2>
+        <input type="text" id="colorInput" placeholder="Наприклад, червоний">
+        <button onclick="checkColor()">Перевірити</button>
+        <div id="messageNumber5"></div>
+    <h2>Калькулятор</h2>
+        <input type="number" id="num1" placeholder="Перше число">
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" placeholder="Друге число">
+        <button onclick="calculate()">Обчислити</button>
+        <div id="messageNumber6"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
